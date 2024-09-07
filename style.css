@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f1f6;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://img.freepik.com/free-vector/realistic-polygonal-background_52683-60158.jpg?w=740&t=st=1725741295~exp=1725741895~hmac=c1e4220252ce106d7d1cb50cfdcb02c1cdd0faa289dfadd919b5855a9c268669");
+}
+
+.resume-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background: rgb(167, 0, 83);
+    color: whitesmoke;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background: #5300d8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+#two{
+    border-radius: 2px;
+    align-items: center;
+    
+}
+
+
+
+
+.card {
+    background: #b896ab;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 8, 181, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+#one{
+    text-align: center;
+    
+    font-style: normal;
+   color: rgb(167, 0, 83); 
+}
+#two{
+    color: #680647;
+}
+#three{
+    color: #680647
+}
+#four {
+    color : #680647
+}
+#purple {
+    color: #680647;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #550929;
+    object-fit: cover;
+    /* display: block;
+    margin: 0 auto;
+    justify-content: right;
+    float: right; */
+    
+}
+.seven{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    padding: 10px 20px;
+    background: #680647;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #e060da;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
